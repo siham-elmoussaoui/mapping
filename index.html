@@ -1,0 +1,311 @@
+
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+
+
+      <!-- basic -->
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <!-- mobile metas -->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+      <!-- site metas -->
+      
+      <meta name="keywords" content="">
+      <meta name="description" content="">
+      <meta name="author" content="">
+
+      <title>Quick Start - Leaflet</title>
+	
+	<link rel="shortcut icon" type="image/x-icon" href="docs/images/favicon.ico" />
+
+    <link rel="stylesheet" href="C:\3CI\M54-Web Mapping-20231013T164946Z-001\Exercice 2\leaflet\leaflet.css" rel="stylesheet"/>
+
+
+    <script src="C:\3CI\M54-Web Mapping-20231013T164946Z-001\Exercice 2\leaflet\leaflet.js" ></script>
+	
+	<script src="C:\3CI\M54-Web Mapping-20231013T164946Z-001\Exercice 2\leaflet\batiments.js" ></script>
+	<script src="C:\3CI\M54-Web Mapping-20231013T164946Z-001\Exercice 2\leaflet\grass.geojson" ></script>
+	<script src="C:\3CI\M54-Web Mapping-20231013T164946Z-001\Exercice 2\leaflet\roads.geojson" ></script>
+	<script src="C:\3CI\M54-Web Mapping-20231013T164946Z-001\Exercice 2\leaflet\terrain.geojson" ></script>
+
+
+	<link href="//unpkg.com/leaflet@1.6.0/dist/leaflet.css" rel="stylesheet">
+
+	<link rel="stylesheet" href="C:\3CI\M54-Web Mapping-20231013T164946Z-001\Exercice 2\leaflet\Control.Geocoder.css" />
+	
+
+
+	<style>
+		html, body {
+			height: 100%;
+			margin: 0;
+		}
+		.leaflet-container {
+			height: 600px;
+			width: 800px;
+			max-width: 100%;
+			max-height: 100%;
+		}
+	</style>
+      <!-- bootstrap css -->
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <!-- style css -->
+      <link rel="stylesheet" href="css/style.css">
+      <!-- Responsive-->
+      <link rel="stylesheet" href="css/responsive.css">
+      <!-- fevicon -->
+      <link rel="icon" href="images/fevicon.png" type="image/gif" />
+      <!-- Scrollbar Custom CSS -->
+      <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+      <!-- Tweaks for older IEs-->
+      <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+      <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+   </head>
+   <!-- body -->
+   <body class="main-layout">
+      <!-- loader  -->
+      <div class="loader_bg">
+         <div class="loader"><img src="images/loading.gif" alt="#" /></div>
+      </div>
+
+      <!-- end loader -->
+      <div class="wrapper">
+         <!-- end loader -->
+         <div class="sidebar">
+           
+         </div>
+         <div id="content">
+            <!-- header -->
+            <header>
+               <!-- header inner -->
+               <div class="menu_sitbar">
+                  <ul class="menu">
+
+                  </ul>
+               </div>
+               <div class="header_full_banner">
+                  <div class="header">
+                     <div class="container">
+                        <div class="row">
+                           
+                           <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col logo_section">
+                              <h1>ELMOUSSAOUI SIHAM</h1>
+                              <div class="full">
+                                 <div class="center-desk">
+                                    
+                                    
+                                    
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9">
+                              <ul class="btn">
+                                
+                              </ul>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <!-- end header inner -->
+                  <!-- end header -->
+
+            <!-- review -->
+            <div id="review" class="review">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-md-12">
+                        <div class="titlepage">
+                           <h2>IAV <span class="blu"> mapping</span></h2>
+                           
+                        </div>
+                     </div>
+                  </div>
+                  <div class="row">
+                     <div class="col-md-12">
+                        <div id="myCarousel" class="carousel slide review_Carousel " data-ride="carousel">
+                           
+                           <div class="carousel-inner">
+                              <div class="carousel-item active">
+                                 <div class="container">
+                                    <div class="carousel-caption ">
+                                       <div class="row">
+                                          <div class="col-md-12 margin_boot">
+                                             <div class="test_box">
+                                                <i><img src="C:\Users\pc\OneDrive\Desktop\Logo_iav.png" alt="#"/></i>
+                                                <h4>Elmoussaoui siham</h4>
+                                                <span>map</span>
+                                                <p>Je suis enchanté de vous présenter ma toute première carte interactive, élaborée avec Leaflet, qui met en lumière l'institut auquel j'appartiens et, plus spécifiquement, le département de topographie. Cette carte interactive constitue une immersion visuelle dans notre environnement éducatif et technologique, soulignant l'importance cruciale du département de topographie au sein de notre institution.</p>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                         
+                              
+                           <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+                           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                           <span class="sr-only">Previous</span>
+                           </a>
+                           <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+                           <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                           <span class="sr-only">Next</span>
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!-- end review -->
+         </div>
+         
+      </div>
+      <!--leaflet recherche-->
+	<script src="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script>
+
+
+	<div id="map" style="width:1500px; height: 800px;"></div>
+
+	<!--leaflet draw plugin-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.draw/0.4.2/leaflet.draw.css"/>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.draw/0.4.2/leaflet.draw.js"></script>
+
+	<!--find your location-->
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet.locatecontrol@0.79.0/dist/L.Control.Locate.min.css" />
+	<script src="https://cdn.jsdelivr.net/npm/leaflet.locatecontrol@0.79.0/dist/L.Control.Locate.min.js" charset="utf-8"></script>
+
+	
+
+	
+	<script>
+				
+		const map = L.map('map').setView([33.977832, -6.865749], 14);
+
+		const tiles = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+			maxZoom: 19,
+			attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+		}).addTo(map);
+
+
+		L.geoJSON(bati).addTo(map);
+		L.geoJSON(grass).addTo(map);
+		L.geoJSON(voirie).addTo(map);
+		L.geoJSON(terrain).addTo(map);
+
+		L.Control.geocoder().addTo(map);
+
+	//draw fonctionaliés
+	var drawnItems = new L.FeatureGroup();
+     map.addLayer(drawnItems);
+     var drawControl = new L.Control.Draw({
+     	// position: 'topright',
+		     	draw: {
+		    polygon: {
+		     shapeOptions: {
+		      color: 'purple'
+		     },
+		     allowIntersection: false,
+		     drawError: {
+		      color: 'orange',
+		      timeout: 1000
+		     },
+		    },
+		    polyline: {
+		     shapeOptions: {
+		      color: 'red'
+		     },
+		    },
+		    rect: {
+		     shapeOptions: {
+		      color: 'green'
+		     },
+		    },
+		    circle: {
+		     shapeOptions: {
+		      color: 'steelblue'
+		     },
+		    },
+		   },
+         edit: {
+             featureGroup: drawnItems
+         }
+     });
+     map.addControl(drawControl);
+      map.on('draw:created', function (e) {
+            var type = e.layerType,
+                layer = e.layer;
+            drawnItems.addLayer(layer);
+        });
+
+    //Marker add
+    var marker = L.marker([33.976933, -6.865930]).addTo(map).bindPopup("<h1>département topo<h1> <p><small>La Filière de formation en Sciences Géomatiques et Ingénierie Topographique a pour principales missions de former le futur ingénieur topographe et de le préparer à l’exercice de sa profession dans divers domaines. Ces domaines intègrent entre autre l’équipement des espaces en infrastructure géodésique, l’établissement des cartes, le cadastre et l’expertise foncière, la collecte, le traitement et la représentation de l’information spatiale pour les besoins de la gestion des ressources et de l’aménagement du territoire et des espaces urbains et ruraux. La formation contribue aussi au développement de la recherche scientifique en réponse aux besoins des différents secteurs des sciences Géomatiques et d’ingénierie topographique</small></p> <img src='C:/3CI/M54-Web Mapping-20231013T164946Z-001/Exercice 2/leaflet/dep_topo.png'/>");
+
+    //show me where i'm
+	L.control.locate().addTo(map);
+
+    
+
+
+	function onMapClick(e) {
+		popup
+			.setLatLng(e.latlng)
+			.setContent(`You clicked the map at ${e.latlng.toString()}`)
+			.openOn(map);
+	}
+
+	map.on('click', onMapClick);
+
+</script>
+      <div class="overlay"></div>
+      <!-- Javascript files-->
+      <script src="js/jquery.min.js"></script>
+      <script src="js/popper.min.js"></script>
+      <script src="js/bootstrap.bundle.min.js"></script>
+      <script src="js/jquery-3.0.0.min.js"></script>
+      <!-- sidebar -->
+      <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+      <script src="js/custom.js"></script>
+      <script type="text/javascript">
+         $(document).ready(function() {
+             $("#sidebar").mCustomScrollbar({
+                 theme: "minimal"
+             });
+         
+             $('#dismiss, .overlay').on('click', function() {
+                 $('#sidebar').removeClass('active');
+                 $('.overlay').removeClass('active');
+             });
+         
+             $('#sidebarCollapse').on('click', function() {
+                 $('#sidebar').addClass('active');
+                 $('.overlay').addClass('active');
+                 $('.collapse.in').toggleClass('in');
+                 $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+             });
+         });
+      </script>
+      <script>
+         $(document).ready(function() {
+             $(".fancybox").fancybox({
+                 openEffect: "none",
+                 closeEffect: "none"
+             });
+         
+             $(".zoom").hover(function() {
+         
+                 $(this).addClass('transition');
+             }, function() {
+         
+                 $(this).removeClass('transition');
+             });
+         });
+      </script>
+   </body>
+</html>
+
